@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    font-family: 'Inter', 'sans-serif';
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main-block, .aboutme-block, .skills-block, .works-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: #BBFF2C;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 0 #000000;
+}
+
+.button a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#main {
+    background-image: url(./img/bgMAIN.png);
+}
+
+.main-block {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    height: 223px;
+    width: 849px;
+    background-image: url(./form1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 30px;
+}
+
+.main-title {
+    color: #2B2D35;
+    font-size: 80px;
+    padding-top: 67px;
+}
+
+.main-subtitle {
+    color: #2B2D35;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+}
+
+#aboutme {
+    background-image: url(./img/bgABOUT.png);
+}
+
+#skills {
+    background-image: url(./img/bgSKILLS.png);
+}
+
+#works {
+    background-image: url(./img/bgWORKS.png);
+}
+
+.works-content {
+    color: white;
+}
