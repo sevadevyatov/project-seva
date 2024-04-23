@@ -83,8 +83,94 @@ section {
     position: absolute;
 }
 
+.moving-planet {
+    z-index: 2;
+    left: 70px;
+    bottom: 40px;
+    position: absolute;
+    animation-name: planet-animation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes planet-animation {
+    from{bottom: 40px;}
+    to{bottom: 90px;}
+}
+
 #aboutme {
     background-image: url(./img/bgABOUT.png);
+}
+
+.aboutme-title {
+    text-align: center;
+    padding-top: 100px;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px #000000;
+}
+
+.aboutme-subtitle {
+    color: #FFF;
+    font-size: 20px;
+    max-width: 463px;
+    padding-bottom: 20px;
+    font-family: 'Comfortaa';
+}
+
+.aboutme-content {
+    width: 35%;
+    height: 270px;
+    padding-top: 40px;
+    border-radius: 0px 0px 0px 20px;
+    padding-left: 20px;
+    background-color: #792aff;
+    position: relative;
+    display: flex;  
+}
+
+.aboutme-cart {
+    background-image: url(./img/form2.png);
+    background-repeat: no-repeat;   
+    width: 376px;
+    height: 346px;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-cart a {
+    align-self: start;
+    color: #000;
+    font-size: 17px;
+    margin-left: 20px;
+    column-gap: 25px;
+    line-height: 25px;
+    font-family: 'Comfortaa';
+}
+
+.aboutme-cart img {
+    padding-bottom: 20px;
+}
+
+.cloud-img {
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    animation-name: cloud-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud-animation {
+    from{right: 30px;}
+    to{right: 60px;}
 }
 
 #skills {
