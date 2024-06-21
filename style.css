@@ -342,7 +342,7 @@ footer {
 }
 
 .swiper {
-    width: 40%;
+    width: 90%;
     height: 100%;
   }
 
@@ -571,5 +571,8 @@ nav {
     }
     .off-scroll{
         overflow: hidden;
+    }
+    .btn-hide{
+        display: none;
     }
 }
